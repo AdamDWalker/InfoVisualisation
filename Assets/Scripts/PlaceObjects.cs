@@ -11,6 +11,8 @@ public class PlaceObjects : MonoBehaviour
     public int objectCount;
     public GameObject theObject;
 
+    //public GameObject terrain;
+
     public GameObject[] spawnObjects = new GameObject[4];
 
     // This is the height that the object will be placed at (Y coord)
