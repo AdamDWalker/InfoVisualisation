@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: 46d7a78e8422f71479ac5462a7ab1573
+timeCreated: 1467814486
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Game_engine
+    100002: hand_l
+    100004: hand_l.001
+    100006: //RootNode
+    100008: human_fileMesh
+    100010: index_01_l
+    100012: index_02_l
+    100014: index_03_l
+    100016: index_03_l_end
+    100018: lowerarm_l
+    100020: lowerarm_l_end
+    100022: middle_01_l
+    100024: middle_02_l
+    100026: middle_03_l
+    100028: middle_03_l_end
+    100030: pinky_01_l
+    100032: pinky_02_l
+    100034: pinky_03_l
+    100036: pinky_03_l_end
+    100038: ring_01_l
+    100040: ring_02_l
+    100042: ring_03_l
+    100044: ring_03_l_end
+    100046: thumb_01_l
+    100048: thumb_02_l
+    100050: thumb_03_l
+    100052: thumb_03_l_end
+    100054: upperarm_l
+    400000: Game_engine
+    400002: hand_l
+    400004: hand_l.001
+    400006: //RootNode
+    400008: human_fileMesh
+    400010: index_01_l
+    400012: index_02_l
+    400014: index_03_l
+    400016: index_03_l_end
+    400018: lowerarm_l
+    400020: lowerarm_l_end
+    400022: middle_01_l
+    400024: middle_02_l
+    400026: middle_03_l
+    400028: middle_03_l_end
+    400030: pinky_01_l
+    400032: pinky_02_l
+    400034: pinky_03_l
+    400036: pinky_03_l_end
+    400038: ring_01_l
+    400040: ring_02_l
+    400042: ring_03_l
+    400044: ring_03_l_end
+    400046: thumb_01_l
+    400048: thumb_02_l
+    400050: thumb_03_l
+    400052: thumb_03_l_end
+    400054: upperarm_l
+    4300000: human_fileMesh
+    7400000: Cast
+    7400002: idle
+    9500000: //RootNode
+    13700000: human_fileMesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Cast
+      takeName: Game_engine|Game_engineAction
+      firstFrame: 0
+      lastFrame: 4
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Game_engine
+        weight: 1
+      - path: Game_engine/hand_l.001
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/index_01_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/index_01_l/index_02_l/index_03_l/index_03_l_end
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/middle_01_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/middle_01_l/middle_02_l/middle_03_l/middle_03_l_end
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/pinky_01_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/pinky_01_l/pinky_02_l/pinky_03_l/pinky_03_l_end
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/ring_01_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/ring_01_l/ring_02_l/ring_03_l/ring_03_l_end
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/thumb_01_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/thumb_01_l/thumb_02_l/thumb_03_l/thumb_03_l_end
+        weight: 1
+      - path: Game_engine/upperarm_l
+        weight: 1
+      - path: Game_engine/upperarm_l/lowerarm_l
+        weight: 1
+      - path: Game_engine/upperarm_l/lowerarm_l/lowerarm_l_end
+        weight: 1
+      - path: human_fileMesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle
+      takeName: Game_engine|Game_engineAction
+      firstFrame: 0
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Game_engine
+        weight: 1
+      - path: Game_engine/hand_l.001
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/index_01_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/index_01_l/index_02_l/index_03_l/index_03_l_end
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/middle_01_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/middle_01_l/middle_02_l/middle_03_l/middle_03_l_end
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/pinky_01_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/pinky_01_l/pinky_02_l/pinky_03_l/pinky_03_l_end
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/ring_01_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/ring_01_l/ring_02_l/ring_03_l/ring_03_l_end
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/thumb_01_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: Game_engine/hand_l.001/hand_l/thumb_01_l/thumb_02_l/thumb_03_l/thumb_03_l_end
+        weight: 1
+      - path: Game_engine/upperarm_l
+        weight: 1
+      - path: Game_engine/upperarm_l/lowerarm_l
+        weight: 1
+      - path: Game_engine/upperarm_l/lowerarm_l/lowerarm_l_end
+        weight: 1
+      - path: human_fileMesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
