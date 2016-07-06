@@ -9,8 +9,8 @@ public class PlaceObjects : MonoBehaviour
 
     // This is the object that will be placed in the world and how many times
     public int objectCount;
-    public float xRange = 500;
-    public float zRange = 500;
+    public float xRange = 100;
+    public float zRange = 100;
 
     // This is a clean zone that will be for the player camp, and no stuff will spawn there
     public int cleanXStart = 0;
