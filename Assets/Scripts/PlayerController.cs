@@ -4,9 +4,10 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
     public float Speed = 7.0f;
+    public float health = 3f;
 	// Use this for initialization
 	void Start () {
-        //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
 	}
 	
 	// Update is called once per frame
