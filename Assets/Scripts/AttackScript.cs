@@ -12,8 +12,13 @@ public class AttackScript : MonoBehaviour {
     public float MaxLmana = 200f;
     public float MaxFmana = 300f;
     public float Lmana = 200f;
+    public float Fmana = 300f;
     public float FRange = 100f;
     public float LRange = 200f;
+    public float ThrowThrust = 1000f;
+
+    public GameObject FireBall;
+    public GameObject firefist;
 	// Use this for initialization
 	void Start ()
     {
@@ -27,6 +32,10 @@ public class AttackScript : MonoBehaviour {
         {
             Lmana++;
         }
+        if (Fmana < MaxFmana)
+        {
+            Fmana++;
+        }
         if (Input.GetButtonDown("Fire1") && Lmana > 50f)
         {
             Shoot();
@@ -34,7 +43,13 @@ public class AttackScript : MonoBehaviour {
         }
         else if (Input.GetButtonDown("Fire1") && Lmana < 50f)
         {
-            Debug.Log("mana too low");
+            Debug.Log("lightning mana too low");
+        }
+
+        if (Input.GetButtonDown("Fire2") && Fmana > 75f)
+        {
+            LobFireBall();
+            Fmana -= 75f; 
         }
 	}
     void Shoot()
@@ -45,5 +60,14 @@ public class AttackScript : MonoBehaviour {
         {
             Debug.Log("we hit: " + Hit.collider.name);
         } 
+    }
+    void LobFireBall()
+    {
+        GameObject Ball = Instantiate(FireBall) as GameObject;
+        Ball.transform.position = transform.position + Cam.transform.forward * 2;
+        Rigidbody rb = Ball.GetComponent<Rigidbody>();
+        rb.velocity = Cam.transform.forward * 40f;
+        
+
     }
 }
