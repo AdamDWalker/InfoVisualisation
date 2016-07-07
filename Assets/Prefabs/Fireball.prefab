@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171650}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 417.41, y: 0.94, z: 243.45}
+  m_LocalPosition: {x: 418.11487, y: 0.125, z: 259.03497}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -94,7 +94,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 5
   power: 10
-  particalEffect: {fileID: 0}
+  particalEffect: {fileID: 400010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 2}
+  FireEffect: {fileID: 400000, guid: bf495eacf58e31146ab012aa89ac68da, type: 2}
 --- !u!135 &13556668
 SphereCollider:
   m_ObjectHideFlags: 1

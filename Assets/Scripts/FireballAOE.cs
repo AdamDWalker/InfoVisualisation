@@ -9,9 +9,10 @@ public class FireballAOE : MonoBehaviour {
     //public GameObject GranageObject;
 
     public Transform particalEffect;
+    public Transform FireEffect;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 	
 	}
 	
@@ -37,9 +38,11 @@ public class FireballAOE : MonoBehaviour {
                 float proximity = (explosionPos - enemy.transform.position).magnitude;
                 float effect = 1 - (proximity / radius);
 
-               // enemy.ApplyDamage(power * effect);  //apply damage needs to be added to enemys 
+                
+               enemy.ApplyDamage(power * effect);  //apply damage needs to be added to enemys 
             }
             Instantiate(particalEffect, explosionPos, transform.rotation);
+            Instantiate(FireEffect, explosionPos, transform.rotation);
 
         }
     }
