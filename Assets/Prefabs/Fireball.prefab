@@ -13,7 +13,6 @@ GameObject:
   - 23: {fileID: 2317046}
   - 114: {fileID: 11452004}
   - 54: {fileID: 5426684}
-  - 135: {fileID: 13547012}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: Untagged
@@ -96,18 +95,6 @@ MonoBehaviour:
   radius: 5
   power: 10
   particalEffect: {fileID: 0}
---- !u!135 &13547012
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 171650}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!135 &13556668
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -115,8 +102,8 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171650}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
+  m_IsTrigger: 1
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
