@@ -1,26 +1,85 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour {
+public class EnemyMovement : MonoBehaviour
+{
+
+    [SerializeField]
+    private LayerMask Mask;
 
     public GameObject player;
-    public float speed = 4;
 
-    public Vector3 playerPos;
+    //public GameObject Test;
 
-	// Use this for initialization
-	void Start () {
-	
+    public float speed;
 
-            
-	}
-	
-	// Update is called once per frame
-	void Update () {
+   // Vector3 playerPos;
 
-        playerPos = player.transform.position;
+    //public float LRange = 20f;
 
-        transform.position = Vector3.MoveTowards(transform.position, playerPos, speed * Time.deltaTime);
-            
-	}
+    //Transform target;
+
+
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        //playerPos = player.transform.position;
+
+        //transform.position = Vector3.MoveTowards(transform.position, playerPos, speed * Time.deltaTime);
+
+        /*var q = Quaternion.LookRotation(player.transform.position - transform.position);
+
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 20 * Time.deltaTime);*/
+
+
+
+
+        var dir = (player.transform.position - transform.position).normalized;
+
+        RaycastHit Hit;
+
+        if (Physics.Raycast(transform.position, transform.forward, out Hit, 5f, Mask))
+        {
+            if (Hit.transform != transform)
+            {
+                dir += Hit.normal * 10f;
+            }
+        }
+
+        var leftR = transform.position;
+        var rightR = transform.position;
+
+        leftR.x -= 2;
+        rightR.x += 2;
+
+        if (Physics.Raycast(leftR, transform.forward, out Hit, 5f, Mask))
+        {
+            if (Hit.transform != transform)
+            {
+                dir += Hit.normal * 10f;
+            }
+        }
+
+        if (Physics.Raycast(rightR, transform.forward, out Hit, 5f, Mask))
+        {
+            if (Hit.transform != transform)
+            {
+                dir += Hit.normal * 10f;
+            }
+        }
+
+        var rot = Quaternion.LookRotation(dir);
+
+        transform.rotation = Quaternion.Slerp(transform.rotation, rot, 2 * Time.deltaTime);
+        transform.position += transform.forward * 10 * Time.deltaTime;
+
+
+    }
 }
