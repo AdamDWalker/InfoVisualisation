@@ -45,11 +45,19 @@ public class EnemyMovement : MonoBehaviour
 
         RaycastHit Hit;
 
-        if (Physics.Raycast(transform.position, transform.forward, out Hit, 5f, Mask))
+        if (Physics.Raycast(transform.position, transform.forward, out Hit, 7f, Mask))
         {
             if (Hit.transform != transform)
             {
-                dir += Hit.normal * 10f;
+                dir += Hit.normal * 12f;
+            }
+            if (Hit.transform.tag == "Fence")
+            {
+                speed = 0;
+            }
+            if (Hit.transform.tag == "BackTerrain")
+            {
+                transform.rotation = Quaternion.LookRotation(dir);
             }
         }
 
@@ -59,26 +67,45 @@ public class EnemyMovement : MonoBehaviour
         leftR.x -= 2;
         rightR.x += 2;
 
-        if (Physics.Raycast(leftR, transform.forward, out Hit, 5f, Mask))
+        if (Physics.Raycast(leftR, transform.forward, out Hit, 7f, Mask))
         {
             if (Hit.transform != transform)
             {
-                dir += Hit.normal * 10f;
+                dir += Hit.normal * 12f;
+            }
+
+            if (Hit.transform.tag == "Fence")
+            {
+                speed = 0;
+            }
+
+            if (Hit.transform.tag == "BackTerrain")
+            {
+                transform.rotation = Quaternion.LookRotation(dir);
             }
         }
 
-        if (Physics.Raycast(rightR, transform.forward, out Hit, 5f, Mask))
+        if (Physics.Raycast(rightR, transform.forward, out Hit, 7f, Mask))
         {
             if (Hit.transform != transform)
             {
-                dir += Hit.normal * 10f;
+                dir += Hit.normal * 12f;
+            }
+            if (Hit.transform.tag == "Fence")
+            {
+                speed = 0;
+            }
+
+            if (Hit.transform.tag == "BackTerrain")
+            {
+                transform.rotation = Quaternion.LookRotation(dir);
             }
         }
 
         var rot = Quaternion.LookRotation(dir);
 
-        transform.rotation = Quaternion.Slerp(transform.rotation, rot, 2 * Time.deltaTime);
-        transform.position += transform.forward * 10 * Time.deltaTime;
+        transform.rotation = Quaternion.Slerp(transform.rotation, rot, 3 * Time.deltaTime);
+        transform.position += transform.forward * speed * Time.deltaTime;
 
 
     }

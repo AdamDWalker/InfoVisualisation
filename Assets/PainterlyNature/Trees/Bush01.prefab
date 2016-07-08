@@ -11,6 +11,7 @@ GameObject:
   - 193: {fileID: 19313192}
   - 33: {fileID: 3313192}
   - 23: {fileID: 2313192}
+  - 65: {fileID: 6595344}
   m_Layer: 0
   m_Name: Bush01
   m_TagString: Untagged
@@ -62,16 +63,16 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _ShadowTex
+          name: _BumpSpecMap
         second:
-          m_Texture: {fileID: 2800000, guid: 38a6363884e1f6048a89675baad2a4b1, type: 3}
+          m_Texture: {fileID: 2800000, guid: d9f7fcf2ebdce2942805bd86eb2bd6a4, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _BumpSpecMap
+          name: _ShadowTex
         second:
-          m_Texture: {fileID: 2800000, guid: d9f7fcf2ebdce2942805bd86eb2bd6a4, type: 3}
+          m_Texture: {fileID: 2800000, guid: 38a6363884e1f6048a89675baad2a4b1, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -106,16 +107,16 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _TranslucencyColor
-        second: {r: 0.64705884, g: 0.64705884, b: 0.64705884, a: 1}
-      data:
-        first:
           name: _TreeInstanceColor
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _TreeInstanceScale
         second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _TranslucencyColor
+        second: {r: 0.64705884, g: 0.64705884, b: 0.64705884, a: 1}
 --- !u!21 &2113192
 Material:
   serializedVersion: 6
@@ -349,6 +350,18 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!65 &6595344
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.2848306, y: 4.7680316, z: 4.417326}
+  m_Center: {x: -0.70305324, y: 2.3840158, z: -0.43082607}
 --- !u!114 &11413192
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -125,16 +125,16 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _ShadowTex
+          name: _BumpSpecMap
         second:
-          m_Texture: {fileID: 2800000, guid: 71a1080786c3c754d9377e2af31d022e, type: 3}
+          m_Texture: {fileID: 2800000, guid: d576e283874db734bad22d06ce434d62, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _BumpSpecMap
+          name: _ShadowTex
         second:
-          m_Texture: {fileID: 2800000, guid: d576e283874db734bad22d06ce434d62, type: 3}
+          m_Texture: {fileID: 2800000, guid: 71a1080786c3c754d9377e2af31d022e, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -169,16 +169,16 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _TranslucencyColor
-        second: {r: 0.5514706, g: 0.5514706, b: 0.5514706, a: 1}
-      data:
-        first:
           name: _TreeInstanceColor
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _TreeInstanceScale
         second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _TranslucencyColor
+        second: {r: 0.5514706, g: 0.5514706, b: 0.5514706, a: 1}
 --- !u!23 &2365264
 MeshRenderer:
   m_ObjectHideFlags: 1
