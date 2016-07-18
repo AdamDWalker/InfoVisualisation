@@ -409,9 +409,22 @@ MonoBehaviour:
   pole2: {fileID: 0}
   TotalEnemy: 0
   WaveDelay: 7
+  canves: {fileID: 0}
+  WaveNumber: {fileID: 0}
+  objectCount: 0
+  xRange: 100
+  zRange: 100
+  cleanXStart: 0
+  cleanXEnd: 25
+  cleanZStart: 0
+  cleanZEnd: 25
+  cloud: {fileID: 0}
+  cloudheight: 0
   Mask:
     serializedVersion: 2
     m_Bits: 1
+  player: {fileID: 0}
+  FireBall: {fileID: 164416, guid: 8aeb2c0224fe763499eed3ec0587162b, type: 2}
   speed: 4
   health: 100
   fireEffect: {fileID: 0}

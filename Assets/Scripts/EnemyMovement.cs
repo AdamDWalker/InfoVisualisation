@@ -1,14 +1,15 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-
 public class EnemyMovement : GameController
 {
 
     [SerializeField]
     private LayerMask Mask;
 
-    private GameObject player;
+    public GameObject player;
+    public GameObject FireBall;
+
 
     //public GameObject Test;
 
@@ -41,7 +42,7 @@ public class EnemyMovement : GameController
 
 
 
-        var dir = (player.transform.position - this.transform.position).normalized;
+        var dir = (player.transform.position - transform.position).normalized;
 
         RaycastHit Hit;
 
@@ -51,9 +52,11 @@ public class EnemyMovement : GameController
             {
                 dir += Hit.normal * 12f;
             }
-            if (Hit.transform.tag == "Fence")
+            if (Hit.transform.tag == "Player")
             {
                 speed = 0;
+                LobFireBall();
+
             }
             if (Hit.transform.tag == "BackTerrain")
             {
@@ -74,9 +77,11 @@ public class EnemyMovement : GameController
                 dir += Hit.normal * 12f;
             }
 
-            if (Hit.transform.tag == "Fence")
+            if (Hit.transform.tag == "Player")
             {
                 speed = 0;
+                LobFireBall();
+
             }
 
             if (Hit.transform.tag == "BackTerrain")
@@ -91,9 +96,10 @@ public class EnemyMovement : GameController
             {
                 dir += Hit.normal * 12f;
             }
-            if (Hit.transform.tag == "Fence")
+            if (Hit.transform.tag == "Player")
             {
                 speed = 0;
+                LobFireBall();
             }
 
             if (Hit.transform.tag == "BackTerrain")
@@ -107,7 +113,14 @@ public class EnemyMovement : GameController
         transform.rotation = Quaternion.Slerp(transform.rotation, rot, 3 * Time.deltaTime);
         transform.position += transform.forward * speed * Time.deltaTime;
 
+    }
 
+    void LobFireBall()
+    {
+        GameObject Ball = Instantiate(FireBall) as GameObject;
+        Ball.transform.position = transform.position + transform.forward;
+        Rigidbody rb = Ball.GetComponent<Rigidbody>();
+        rb.velocity = transform.forward * 40f;
     }
 
     public void ApplyDamage(float damage)
@@ -115,10 +128,7 @@ public class EnemyMovement : GameController
         health -= damage;
 
         if (health < 0)
-        {
             Destroy(this.gameObject);
-            player.transform.GetComponent<GameController>().CSV--;
-        }
     }
     IEnumerator fireDamage(float DamPerSec, float damageDuration, float damageCount)
     {

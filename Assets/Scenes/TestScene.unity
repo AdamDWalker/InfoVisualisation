@@ -1990,7 +1990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffef63ef1cdb224c841d15479755101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectCount: 75
+  objectCount: 60
   xRange: 100
   zRange: 100
   cleanXStart: 40
@@ -1998,7 +1998,7 @@ MonoBehaviour:
   cleanZStart: 0
   cleanZEnd: 15
   spawnObjects:
-  - {fileID: 176894, guid: 26a554db9f81cf1469052951012fa4ce, type: 2}
+  - {fileID: 134380, guid: c999933c7e676e141a05cbf15ef402cd, type: 2}
   - {fileID: 103096, guid: ad27bebd4cdf77344a4a75889655f7bd, type: 2}
   - {fileID: 178102, guid: c2d3008dd6678c64ca97c8affdc7c2e6, type: 2}
   - {fileID: 138244, guid: c370a91b345318d4eac7637d8ad2b05a, type: 2}
@@ -3410,11 +3410,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 467764, guid: b2cde01a5952a8646b076277b6434500, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.99
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 467764, guid: b2cde01a5952a8646b076277b6434500, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1.9
+      value: 3.298
       objectReference: {fileID: 0}
     - target: {fileID: 467764, guid: b2cde01a5952a8646b076277b6434500, type: 2}
       propertyPath: m_LocalRotation.x

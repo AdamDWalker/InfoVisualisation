@@ -29,7 +29,7 @@ public class FireballAOE : MonoBehaviour {
 
     void OnTriggerEnter()
     {
-        Debug.Log("hit something well done!");
+      //  Debug.Log("hit something well done!");
         Vector3 explosionPos = transform.position;
         Collider[] colliders = Physics.OverlapSphere(explosionPos, radius);
         foreach (Collider hit in colliders)
@@ -41,7 +41,7 @@ public class FireballAOE : MonoBehaviour {
             EnemyMovement enemy = hit.GetComponent<EnemyMovement>();
             if (enemy != null)
             {
-                Debug.Log("enemy hit for some damage");
+          //      Debug.Log("enemy hit for some damage");
                 float proximity = (explosionPos - enemy.transform.position).magnitude;
                 float effect = 1 - (proximity / radius);
 

@@ -307,6 +307,8 @@ MonoBehaviour:
   Mask:
     serializedVersion: 2
     m_Bits: 1
+  player: {fileID: 0}
+  FireBall: {fileID: 164416, guid: f921d97d8f1f6e647b7758a4bf0c04b3, type: 2}
   speed: 4
   health: 100
   fireEffect: {fileID: 0}

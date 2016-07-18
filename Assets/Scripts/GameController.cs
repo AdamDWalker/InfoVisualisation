@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        Debug.Log("enemy count: " + CSV);
+       // Debug.Log("enemy count: " + CSV);
         if (TotalEnemy == 0f && WaveStart == false && CSV == 0)
         {
             WaveStart = true;
@@ -70,12 +70,12 @@ public class GameController : MonoBehaviour {
     void Spawner(int Wave)
     {
         TotalEnemy = (Wave * 8);
-        Debug.Log("the enemy count for wave 1 is: " + TotalEnemy);
+       // Debug.Log("the enemy count for wave 1 is: " + TotalEnemy);
         if (TotalEnemy != 0)
         {
             int spchoice = Random.Range(0, 5);
             GameObject enemyobj = Instantiate(Enemy) as GameObject;
-            Debug.Log("enemy being spawned");
+           // Debug.Log("enemy being spawned");
             enemyobj.transform.position = SP[spchoice].transform.position;
             CSV++;
             TotalEnemy--;   
@@ -89,7 +89,7 @@ public class GameController : MonoBehaviour {
         {
             int spchoice = Random.Range(0, 5);
             GameObject enemyobj = Instantiate(Enemy) as GameObject;
-            Debug.Log("enemy being spawned");
+          //  Debug.Log("enemy being spawned");
             enemyobj.transform.position = SP[spchoice].transform.position;
             CSV++;
             TotalEnemy--;
@@ -102,7 +102,7 @@ public class GameController : MonoBehaviour {
         //instantiate a new cloud randomaly over the map here
         x++;
         yield return new WaitForSeconds(WaveDelay);
-        Debug.Log("hype hype the coroutine has come! Wave: " + x);
+     //   Debug.Log("hype hype the coroutine has come! Wave: " + x);
         WaveNumber.text = x.ToString();
         Instantiate(cloud, getSpawnPoint(), Quaternion.identity);
         Spawner(x);
