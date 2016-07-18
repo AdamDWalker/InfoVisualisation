@@ -1,29 +1,29 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+
+public class EnemyMovement : GameController
 {
 
     [SerializeField]
     private LayerMask Mask;
 
-    public GameObject player;
+    private GameObject player;
 
     //public GameObject Test;
 
     public float speed;
 
-   // Vector3 playerPos;
-
-    //public float LRange = 20f;
-
+    public float health = 100f;
+    private bool OnFire = false;
+    public ParticleEmitter fireEffect;
     //Transform target;
 
 
     // Use this for initialization
     void Start()
     {
-
+        player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
@@ -41,7 +41,7 @@ public class EnemyMovement : MonoBehaviour
 
 
 
-        var dir = (player.transform.position - transform.position).normalized;
+        var dir = (player.transform.position - this.transform.position).normalized;
 
         RaycastHit Hit;
 
@@ -108,5 +108,42 @@ public class EnemyMovement : MonoBehaviour
         transform.position += transform.forward * speed * Time.deltaTime;
 
 
+    }
+
+    public void ApplyDamage(float damage)
+    {
+        health -= damage;
+
+        if (health < 0)
+        {
+            Destroy(this.gameObject);
+            player.transform.GetComponent<GameController>().CSV--;
+        }
+    }
+    IEnumerator fireDamage(float DamPerSec, float damageDuration, float damageCount)
+    {
+        float count = 0f;
+        if (OnFire != true)
+        {
+            fireEffect.emit = true;
+            OnFire = true;
+            while (count < damageCount)
+            {
+                health -= DamPerSec;
+                count++;
+                yield return new WaitForSeconds(damageDuration);
+            }
+            fireEffect.emit = false;
+            OnFire = false;
+        }
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "player")
+        {
+            PlayerController HP = other.GetComponent<PlayerController>();
+
+            HP.health--;
+        }
     }
 }

@@ -9,8 +9,9 @@ public class CamaraController : MonoBehaviour {
     public float smooth = 2.0f;
 
     GameObject Character;
+
     // Use this for initialization
-	void Start () {
+    void Start () {
         Character = this.transform.parent.gameObject;
 	}
 	
