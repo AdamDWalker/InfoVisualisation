@@ -20,13 +20,28 @@ public class EnemyMovement : GameController
     public ParticleEmitter fireEffect;
     //Transform target;
 
-  //  private NavMeshAgent enemy;
+    private NavMeshAgent enemy;
 
     // Use this for initialization
     void Start()
     {
-        player = GameObject.FindWithTag("Player");
-     //   enemy = GetComponent<NavMeshAgent>();
+
+        switch (Random.Range(0, 3))
+        {
+            case 0:
+                player = GameObject.FindWithTag("Target1");
+                break;
+            case 1:
+                player = GameObject.FindWithTag("Target2");
+                break;
+            case 2:
+                player = GameObject.FindWithTag("Target3");
+                break;
+            default:
+                player = GameObject.FindWithTag("Target1");
+                break;
+        }
+        enemy = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
@@ -41,11 +56,11 @@ public class EnemyMovement : GameController
 
         transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 20 * Time.deltaTime);*/
 
-      //  enemy.SetDestination(player.transform.position);
+        enemy.SetDestination(player.transform.position);
 
 
         
-        var dir = (player.transform.position - transform.position).normalized;
+        /*var dir = (player.transform.position - transform.position).normalized;
 
         RaycastHit Hit;
 
@@ -114,7 +129,7 @@ public class EnemyMovement : GameController
         var rot = Quaternion.LookRotation(dir);
 
         transform.rotation = Quaternion.Slerp(transform.rotation, rot, 3 * Time.deltaTime);
-        transform.position += transform.forward * speed * Time.deltaTime;
+        transform.position += transform.forward * speed * Time.deltaTime;*/
 
     }
 
