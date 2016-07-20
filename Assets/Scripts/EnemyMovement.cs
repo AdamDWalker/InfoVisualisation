@@ -20,11 +20,13 @@ public class EnemyMovement : GameController
     public ParticleEmitter fireEffect;
     //Transform target;
 
+  //  private NavMeshAgent enemy;
 
     // Use this for initialization
     void Start()
     {
         player = GameObject.FindWithTag("Player");
+     //   enemy = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
@@ -39,9 +41,10 @@ public class EnemyMovement : GameController
 
         transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 20 * Time.deltaTime);*/
 
+      //  enemy.SetDestination(player.transform.position);
 
 
-
+        
         var dir = (player.transform.position - transform.position).normalized;
 
         RaycastHit Hit;

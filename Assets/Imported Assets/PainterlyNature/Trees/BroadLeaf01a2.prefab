@@ -12,6 +12,7 @@ GameObject:
   - 33: {fileID: 3342224}
   - 23: {fileID: 2342224}
   - 65: {fileID: 6578592}
+  - 208: {fileID: 20855862}
   m_Layer: 0
   m_Name: BroadLeaf01a2
   m_TagString: Untagged
@@ -9188,6 +9189,21 @@ Tree:
   m_GameObject: {fileID: 142224}
   m_SpeedTreeWindAsset: {fileID: 0}
   m_TreeData: {fileID: 11442224}
+--- !u!208 &20855862
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142224}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.4390001, y: 3.239, z: 2.239}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.081, y: 2.8260002, z: -0.51900005}
+  m_TimeToStationary: 0.5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -1,10 +1,20 @@
 fileFormatVersion: 2
 guid: 5bde2fca5e5734a43b1dd0eba6dd3632
-timeCreated: 1467724492
+timeCreated: 1468936321
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Enemy: {instanceID: 0}
+  - flag: {instanceID: 0}
+  - pole1: {instanceID: 0}
+  - pole2: {instanceID: 0}
+  - canves: {instanceID: 0}
+  - WaveNumber: {instanceID: 0}
+  - cloud: {instanceID: 0}
+  - player: {fileID: 155150, guid: b2cde01a5952a8646b076277b6434500, type: 2}
+  - FireBall: {instanceID: 0}
+  - fireEffect: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

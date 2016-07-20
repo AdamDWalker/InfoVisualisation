@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3310884}
   - 23: {fileID: 2363360}
   - 65: {fileID: 6515316}
+  - 208: {fileID: 20875796}
   m_Layer: 0
   m_Name: rock_04
   m_TagString: Untagged
@@ -74,8 +75,23 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.160624, y: 5.1155024, z: 3.0855174}
+  m_Size: {x: 3, y: 4, z: 2}
   m_Center: {x: 0.08657108, y: -0.20595925, z: -0.10009959}
+--- !u!208 &20875796
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160170}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.5, y: 2, z: 1}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.087000005, y: -0.20600002, z: -0.1}
+  m_TimeToStationary: 0.5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
