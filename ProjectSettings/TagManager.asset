@@ -8,6 +8,12 @@ TagManager:
   - Fence
   - Fire
   - Player
+  - Target1
+  - Target2
+  - Target3
+  - Controller
+  - righthand
+  - EnemyAOE
   layers:
   - Default
   - TransparentFX

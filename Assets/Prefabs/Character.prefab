@@ -768,7 +768,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 155150}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.6, y: 2.99, z: 1.9}
+  m_LocalPosition: {x: 41.65272, y: 0, z: 11.703598}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1199,6 +1199,16 @@ MonoBehaviour:
   TotalEnemy: 0
   WaveDelay: 7
   canves: {fileID: 0}
+  WaveNumber: {fileID: 0}
+  objectCount: 0
+  xRange: 100
+  zRange: 100
+  cleanXStart: 0
+  cleanXEnd: 25
+  cleanZStart: 0
+  cleanZEnd: 25
+  cloud: {fileID: 0}
+  cloudheight: 0
 --- !u!114 &11407258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1234,8 +1244,6 @@ MonoBehaviour:
   MaxFmana: 300
   Lmana: 200
   Fmana: 1000
-  FRange: 100
-  LRange: 200
   ThrowThrust: 1000
   FireBall: {fileID: 164416, guid: 8aeb2c0224fe763499eed3ec0587162b, type: 2}
   firefist: {fileID: 150266}
@@ -1245,7 +1253,9 @@ MonoBehaviour:
   smallL: {fileID: 169702}
   largeR: {fileID: 149954}
   midR: {fileID: 110854}
-  SmallR: {fileID: 115844}
+  smallR: {fileID: 0}
+  RightHandMana: {fileID: 0}
+  LeftHandMana: {fileID: 0}
 --- !u!114 &11430634
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4748,10 +4758,10 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 4294967295
+        rgba: 4291093792
       maxColor:
         serializedVersion: 2
-        rgba: 4291940817
+        rgba: 4284979221
       minMaxState: 2
     startSize:
       scalar: 0.015
@@ -7856,10 +7866,10 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 4285558985
+        rgba: 4288175112
       maxColor:
         serializedVersion: 2
-        rgba: 4294967295
+        rgba: 4283469826
       minMaxState: 2
     startSize:
       scalar: 1
@@ -9310,10 +9320,10 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 4285558985
+        rgba: 4282652686
       maxColor:
         serializedVersion: 2
-        rgba: 4294967295
+        rgba: 4294572288
       minMaxState: 2
     startSize:
       scalar: 1
@@ -13747,10 +13757,10 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 4285558985
+        rgba: 4292228431
       maxColor:
         serializedVersion: 2
-        rgba: 4294967295
+        rgba: 4289769488
       minMaxState: 2
     startSize:
       scalar: 1
@@ -15201,10 +15211,10 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 849323435
+        rgba: 847603206
       maxColor:
         serializedVersion: 2
-        rgba: 520093695
+        rgba: 506397185
       minMaxState: 2
     startSize:
       scalar: 1.2
@@ -16635,10 +16645,10 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 4285558985
+        rgba: 4286190848
       maxColor:
         serializedVersion: 2
-        rgba: 4294967295
+        rgba: 4290903808
       minMaxState: 2
     startSize:
       scalar: 1
@@ -18089,10 +18099,10 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 4285558985
+        rgba: 4286229251
       maxColor:
         serializedVersion: 2
-        rgba: 4294967295
+        rgba: 4293675321
       minMaxState: 2
     startSize:
       scalar: 1
@@ -19533,10 +19543,10 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 4294967295
+        rgba: 4288450312
       maxColor:
         serializedVersion: 2
-        rgba: 4291940817
+        rgba: 4288395275
       minMaxState: 2
     startSize:
       scalar: 0.015
@@ -22516,10 +22526,10 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 4294967295
+        rgba: 4288992276
       maxColor:
         serializedVersion: 2
-        rgba: 4291940817
+        rgba: 4287758371
       minMaxState: 2
     startSize:
       scalar: 0.015
@@ -24075,10 +24085,10 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 849323435
+        rgba: 849418040
       maxColor:
         serializedVersion: 2
-        rgba: 520093695
+        rgba: 509716236
       minMaxState: 2
     startSize:
       scalar: 1.2
@@ -25509,10 +25519,10 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 4285558985
+        rgba: 4281494784
       maxColor:
         serializedVersion: 2
-        rgba: 4294967295
+        rgba: 4294961664
       minMaxState: 2
     startSize:
       scalar: 1
@@ -26953,10 +26963,10 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 4294967295
+        rgba: 4289507866
       maxColor:
         serializedVersion: 2
-        rgba: 4291940817
+        rgba: 4293841152
       minMaxState: 2
     startSize:
       scalar: 0.015
