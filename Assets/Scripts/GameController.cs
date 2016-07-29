@@ -30,12 +30,14 @@ public class GameController : MonoBehaviour {
 
     public GameObject cloud;
     public float cloudheight;
+    public GameObject HPS;
+    public float healthvalue = 10;
     // Use this for initialization
     void Start ()
     {
-        
-        
-	}
+
+
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -65,7 +67,8 @@ public class GameController : MonoBehaviour {
             }
         }
 
-	}
+        //Debug.Log(CSV);
+    }
 
     void Spawner(int Wave)
     {
@@ -125,8 +128,6 @@ public class GameController : MonoBehaviour {
             pole2.GetComponent<MeshRenderer>().enabled = false;
             canves.SetActive(true);
         }
-
-
     }
 
     Vector3 getSpawnPoint()
@@ -150,5 +151,9 @@ public class GameController : MonoBehaviour {
         } while (!validPoints);
 
         return spawnPoint;
+    }
+    public void UpdateCSV()
+    {
+        CSV--;
     }
 }
