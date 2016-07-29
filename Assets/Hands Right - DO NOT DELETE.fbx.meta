@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: 7dfac0109265ef0459d8dd0132795d51
+timeCreated: 1469708692
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Game_engine
+    100002: hand_r
+    100004: //RootNode
+    100006: human_fileMesh
+    100008: index_01_r
+    100010: index_02_r
+    100012: index_03_r
+    100014: index_03_r_end
+    100016: index_03_r_end_end
+    100018: lowerarm_r
+    100020: lowerarm_r.001
+    100022: lowerarm_r_end
+    100024: lowerarm_r_end_end
+    100026: middle_01_r
+    100028: middle_02_r
+    100030: middle_03_r
+    100032: middle_03_r_end
+    100034: middle_03_r_end_end
+    100036: pinky_01_r
+    100038: pinky_02_r
+    100040: pinky_03_r
+    100042: pinky_03_r_end
+    100044: pinky_03_r_end_end
+    100046: ring_01_r
+    100048: ring_02_r
+    100050: ring_03_r
+    100052: ring_03_r_end
+    100054: ring_03_r_end_end
+    100056: thumb_01_r
+    100058: thumb_02_r
+    100060: thumb_03_r
+    100062: thumb_03_r_end
+    100064: thumb_03_r_end_end
+    100066: upperarm_r
+    400000: Game_engine
+    400002: hand_r
+    400004: //RootNode
+    400006: human_fileMesh
+    400008: index_01_r
+    400010: index_02_r
+    400012: index_03_r
+    400014: index_03_r_end
+    400016: index_03_r_end_end
+    400018: lowerarm_r
+    400020: lowerarm_r.001
+    400022: lowerarm_r_end
+    400024: lowerarm_r_end_end
+    400026: middle_01_r
+    400028: middle_02_r
+    400030: middle_03_r
+    400032: middle_03_r_end
+    400034: middle_03_r_end_end
+    400036: pinky_01_r
+    400038: pinky_02_r
+    400040: pinky_03_r
+    400042: pinky_03_r_end
+    400044: pinky_03_r_end_end
+    400046: ring_01_r
+    400048: ring_02_r
+    400050: ring_03_r
+    400052: ring_03_r_end
+    400054: ring_03_r_end_end
+    400056: thumb_01_r
+    400058: thumb_02_r
+    400060: thumb_03_r
+    400062: thumb_03_r_end
+    400064: thumb_03_r_end_end
+    400066: upperarm_r
+    4300000: human_fileMesh
+    7400000: Game_engine|Game_engine|Game_engine|Game_engineAction|Game_engine|Game_engi
+    9500000: //RootNode
+    13700000: human_fileMesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
